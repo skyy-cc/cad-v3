@@ -36,10 +36,10 @@ export function LocalhostDetector(props: Props) {
 
         <p className="font-medium leading-relaxed">
           We have detected the usage of <code>localhost</code> or <code>127.0.0.1</code> in
-          production mode. We do not support this and you will not be able to use SnailyCADv4 using
+          production mode. We do not support this and you will not be able to use KCDOJRP using
           localhost.
           <br />
-          Please update your <code>.env</code> file or ENV in the SnailyCAD Manager App to use a
+          Please update your <code>.env</code> file or ENV in the KCDOJRP Manager App to use a
           valid domain or IP-address.
         </p>
 
@@ -47,7 +47,7 @@ export function LocalhostDetector(props: Props) {
           <h3 className="text-xl font-semibold mb-1">Valid Examples</h3>
           <p className="font-medium flex gap-2 items-center">
             <CheckCircleFill className="fill-green-400" />
-            The following URLs are supported by SnailyCAD:
+            The following URLs are supported by KCDOJRP:
           </p>
 
           <ul className="leading-loose mt-1">

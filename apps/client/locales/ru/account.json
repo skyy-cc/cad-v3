@@ -53,7 +53,7 @@
     "otherSounds": "Другие звуки",
     "unavailableSounds": "Недоступные звуки",
     "unavailableSoundsMessage": "Этот звук недоступен. Он может быть добавлен администратором",
-    "userApiTokenDescription": "Этот токен может быть использован для подключения к SnailyCAD API",
+    "userApiTokenDescription": "Этот токен может быть использован для подключения к KCDOJRP API",
     "developerMode": "Режим разработчика",
     "statusViewDescription": "Как цвет кода статуса (тэнкода) представлен в таблице активных юнитов."
   },

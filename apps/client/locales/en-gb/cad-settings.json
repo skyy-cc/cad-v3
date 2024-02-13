@@ -2,9 +2,9 @@
   "CadSettings": {
     "generalSettings": "General Settings",
     "cadName": "CAD Name",
-    "cadNameDescription": "The name of your SnailyCAD instance. This can be the name of your community or server, etc.",
+    "cadNameDescription": "The name of your KCDOJRP instance. This can be the name of your community or server, etc.",
     "cadLogo": "CAD Logo",
-    "cadLogoDescription": "The logo of your SnailyCAD instance. This can be the logo of your community or server, etc. <span>Note:</span> page reload may be required.",
+    "cadLogoDescription": "The logo of your KCDOJRP instance. This can be the logo of your community or server, etc. <span>Note:</span> page reload may be required.",
     "authScreenHeaderImage": "Auth Screen Header Image",
     "authScreenBackgroundImage": "Auth Screen Background Image",
     "cadOpenGraphDescription": "CAD Open Graph Description",
@@ -25,7 +25,7 @@
     "businessWhitelist": "Business Allowlist",
     "businessWhitelistDescription": "The business system will be allowlisted. Any new business must first be reviewed, then they can be approved or denied before it can be used.",
     "timeZone": "Time Zone",
-    "timeZoneDescription": "The time zone that will be used in the SnailyCAD instance. This will apply to all users."
+    "timeZoneDescription": "The time zone that will be used in the KCDOJRP instance. This will apply to all users."
   },
   "DiscordRolesTab": {
     "discordRoles": "Discord Roles",

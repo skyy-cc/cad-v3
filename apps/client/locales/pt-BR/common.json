@@ -166,7 +166,7 @@
     "captchaRequired": "Ocorreu um erro ao tentar validar seu CAPTCHA. Tente novamente mais tarde.",
     "invalidCaptcha": "Não foi possível verificar que você é humano. Entre em contato com um administrador se achar que isso é um erro.",
     "updateAvailable": "Atualização Disponível",
-    "updateAvailableInfo": "Uma nova atualização está disponível. Atualize seu SnailyCAD para aproveitar os recursos mais recentes e correções de bugs. Clique para obter mais informações.",
+    "updateAvailableInfo": "Uma nova atualização está disponível. Atualize seu KCDOJRP para aproveitar os recursos mais recentes e correções de bugs. Clique para obter mais informações.",
     "serialNumberInUse": "O número de série já está em uso.",
     "vinNumberInUse": "Número VIN já está em uso.",
     "alreadyHasPrimaryUnit": "Esta chamada já tem uma unidade primária.",

@@ -247,7 +247,7 @@ async function getDiscordData(code: string): Promise<APIUser | null> {
   await request(roleConnectionURL, {
     method: "PUT",
     body: JSON.stringify({
-      platform_name: "SnailyCAD",
+      platform_name: "KCDOJRP",
       metadata: { cad_connected: 1 },
     }),
     headers: {

@@ -1,5 +1,4 @@
 import { Form, Formik, type FormikHelpers } from "formik";
-import Link from "next/link";
 import { Discord, Steam } from "react-bootstrap-icons";
 import { Alert, Button, Loader, TextField } from "@snailycad/ui";
 import { TwoFactorAuthScreen } from "components/auth/two-factor-auth-screen";
@@ -123,15 +122,6 @@ export function LoginForm({ onFormSubmitted, isWithinModal }: Props) {
             <>
               <header className="mb-5">
                 <h1 className="text-3xl font-bold text-gray-800 dark:text-white">{t("login")}</h1>
-
-                {ALLOW_REGULAR_LOGIN && !isWithinModal ? (
-                  <Link
-                    href="/auth/register"
-                    className="inline-block mt-2 underline text-neutral-700 dark:text-gray-200"
-                  >
-                    {t("noAccount")}
-                  </Link>
-                ) : null}
               </header>
 
               {errorMessage ? <Alert type="error" className="my-3" message={errorMessage} /> : null}

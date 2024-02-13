@@ -106,7 +106,7 @@ export class CADSettingsLiveMapController {
         captureException(err);
         throw new ExtendedBadRequest({
           tiles:
-            "Unable to write to the file destination. Please make sure SnailyCAD has the correct write permissions to these files/folder",
+            "Unable to write to the file destination. Please make sure KCDOJRP has the correct write permissions to these files/folder",
         });
       }
     }

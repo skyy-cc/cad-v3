@@ -147,7 +147,7 @@
     "captchaRequired": "Ett fel uppstod när CAPTCHA skulle valideras. Försök igen senare.",
     "invalidCaptcha": "Vi kunde inte verifiera att du är en människa. Kontakta en administratör om du tror att detta är ett fel.",
     "updateAvailable": "Uppdatering tillgänglig",
-    "updateAvailableInfo": "En ny uppdatering är tillgänglig. Uppdatera din SnailyCAD för att dra nytta av de senaste funktionerna och buggfixarna. Klicka för mer information.",
+    "updateAvailableInfo": "En ny uppdatering är tillgänglig. Uppdatera din KCDOJRP för att dra nytta av de senaste funktionerna och buggfixarna. Klicka för mer information.",
     "serialNumberInUse": "Serienumret används redan.",
     "vinNumberInUse": "VIN-numret används redan.",
     "alreadyHasPrimaryUnit": "Detta samtal har redan en primärenhet.",

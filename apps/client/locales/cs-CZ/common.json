@@ -150,7 +150,7 @@
     "captchaRequired": "Při pokusu o ověření CAPTCHA došlo k chybě. Zkuste to prosím později.",
     "invalidCaptcha": "Nepodařilo se nám ověřit, zda jste člověk. Pokud se domníváte, že se jedná o chybu, kontaktujte prosím správce.",
     "updateAvailable": "Aktualizace k dispozici",
-    "updateAvailableInfo": "K dispozici je nová aktualizace. Aktualizujte prosím svůj SnailyCAD, abyste mohli využívat nejnovější funkce a opravy chyb. Kliknutím získáte další informace.",
+    "updateAvailableInfo": "K dispozici je nová aktualizace. Aktualizujte prosím svůj KCDOJRP, abyste mohli využívat nejnovější funkce a opravy chyb. Kliknutím získáte další informace.",
     "serialNumberInUse": "Sériové číslo se již používá.",
     "vinNumberInUse": "VIN se již používá",
     "alreadyHasPrimaryUnit": "Tato událost již má primární hlídku.",

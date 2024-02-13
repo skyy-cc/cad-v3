@@ -56,7 +56,7 @@ export function ApiVerification(props: Props) {
             <h3 className="text-xl font-semibold mb-1">Your Configuration</h3>
             <p className="font-medium">
               The configuration that you have provided in your <code>.env</code> file or ENV in the
-              SnailyCAD Manager App:
+              KCDOJRP Manager App:
             </p>
 
             <ul className="leading-loose mt-1">
@@ -130,11 +130,11 @@ NEXT_PUBLIC_PROD_ORIGIN="${process.env.NEXT_PUBLIC_PROD_ORIGIN}"`}
         <div className="p-2 max-w-2xl">
           <h1 className="flex items-center gap-2 font-bold text-2xl mb-3">
             <ExclamationDiamondFill className="fill-red-400" />
-            Could not connect to your SnailyCAD API.
+            Could not connect to your KCDOJRP API.
           </h1>
 
           <p className="font-medium leading-relaxed">
-            SnailyCAD was not able to connect to your SnailyCAD API. This means you will not be able
+            KCDOJRP was not able to connect to your KCDOJRP API. This means you will not be able
             to use SnailyCADv4 unless you resolve this issue.
             <span className="my-2 block" />
             SnailyCADv4 is designed to communicate to an API, which is hosted on a different URL. We
@@ -145,7 +145,7 @@ NEXT_PUBLIC_PROD_ORIGIN="${process.env.NEXT_PUBLIC_PROD_ORIGIN}"`}
             <h3 className="text-xl font-semibold mb-1">Your Configuration</h3>
             <p className="font-medium">
               The configuration that you have provided in your <code>.env</code> file or ENV in the
-              SnailyCAD Manager App:
+              KCDOJRP Manager App:
             </p>
 
             <ul className="leading-loose mt-1">
@@ -186,23 +186,13 @@ NEXT_PUBLIC_PROD_ORIGIN="${process.env.NEXT_PUBLIC_PROD_ORIGIN}"`}
                     className="text-blue-400 underline"
                     href={process.env.NEXT_PUBLIC_PROD_ORIGIN}
                   >
-                    Your SnailyCAD API is accessible.
+                    Your KCDOJRP API is accessible.
                   </a>{" "}
-                  (It should show your SnailyCAD version)
+                  (It should show your KCDOJRP version)
                 </li>
 
                 <li>
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://docs.snailycad.org/docs/installations/methods/standalone#6-accessing-snailycadv4"
-                    className="text-blue-400 underline"
-                  >
-                    All the required ports are forwarded.
-                  </a>
-                </li>
-                <li>
-                  Your SnailyCAD API URL ends with <code>/v1</code>.
+                  Your KCDOJRP API URL ends with <code>/v1</code>.
                 </li>
               </ul>
               <span className="my-2 block" />

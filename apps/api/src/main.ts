@@ -61,11 +61,11 @@ async function bootstrap() {
 
     const nodeVersion = process.versions.node;
 
-    console.log(`SnailyCADv4 is running ${versionStr}. Node version: ${nodeVersion}`);
+    console.log(`KCDOJRPv4 is running ${versionStr}. Node version: ${nodeVersion}`);
 
     if (canSecureCookiesBeEnabled() === false) {
       $log.error(
-        "Secure cookies (SECURE_COOKIES_FOR_IFRAME) could not be enabled because this SnailyCAD instance is not using HTTPS. https://docs.snailycad.org/docs/errors/secure-cookies-for-iframe",
+        "Secure cookies (SECURE_COOKIES_FOR_IFRAME) could not be enabled because this KCDOJRP instance is not using HTTPS.",
       );
     }
   } catch (er) {

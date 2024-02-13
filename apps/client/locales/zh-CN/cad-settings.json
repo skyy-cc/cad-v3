@@ -2,9 +2,9 @@
   "CadSettings": {
     "generalSettings": "常规设置",
     "cadName": "CAD名称",
-    "cadNameDescription": "您的 SnailyCAD 实例的名称。这可以是您社区或服务器的名称等。",
+    "cadNameDescription": "您的 KCDOJRP 实例的名称。这可以是您社区或服务器的名称等。",
     "cadLogo": "CAD标志",
-    "cadLogoDescription": "您的 SnailyCAD 实例的标志。这可以是您社区或服务器的标志等。 <span>注意：</span>可能需要重新加载页面。",
+    "cadLogoDescription": "您的 KCDOJRP 实例的标志。这可以是您社区或服务器的标志等。 <span>注意：</span>可能需要重新加载页面。",
     "authScreenHeaderImage": "认证屏幕标题图像",
     "authScreenBackgroundImage": "认证屏幕背景图像",
     "cadOpenGraphDescription": "CAD开放图描述",
@@ -25,7 +25,7 @@
     "businessWhitelist": "企业白名单",
     "businessWhitelistDescription": "企业系统将被列入白名单。任何新企业都必须首先经过审核，然后才能获得批准或拒绝，然后才能使用。",
     "timeZone": "时区",
-    "timeZoneDescription": "将在 SnailyCAD 实例中使用的时区。这将适用于所有用户。"
+    "timeZoneDescription": "将在 KCDOJRP 实例中使用的时区。这将适用于所有用户。"
   },
   "DiscordRolesTab": {
     "discordRoles": "Discor身份组",

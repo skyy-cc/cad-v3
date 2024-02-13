@@ -43,12 +43,6 @@ export function CadSettingsLayout(props: { children: React.ReactNode }) {
   const t = useTranslations("Management");
   const { Component, audio, roleplayStopped } = useRoleplayStopped();
   const { showError } = useSocketError();
-  const { cad } = useAuth();
-  const tError = useTranslations("Errors");
-
-  const isNewVersionAvailable =
-    cad?.version?.latestReleaseVersion &&
-    parseCadVersion(cad.version.latestReleaseVersion) > parseCadVersion(cad.version.currentVersion);
 
   return (
     <>
@@ -63,18 +57,6 @@ export function CadSettingsLayout(props: { children: React.ReactNode }) {
           <div className="ml-6 px-4 py-5 admin-dashboard-responsive">
             <Component enabled={roleplayStopped} audio={audio} />
             {showError ? <SocketErrorComponent /> : null}
-            {cad?.version && isNewVersionAvailable ? (
-              <a
-                href={`https://github.com/SnailyCAD/snaily-cadv4/releases/tag/${cad.version.latestReleaseVersion}`}
-                className="block mb-5"
-              >
-                <Alert
-                  type="warning"
-                  title={tError("updateAvailable")}
-                  message={tError("updateAvailableInfo")}
-                />
-              </a>
-            ) : null}
             {props.children}
           </div>
         </Tabs.Root>

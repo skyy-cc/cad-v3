@@ -53,7 +53,7 @@
     "otherSounds": "其他声音",
     "unavailableSounds": "不可用声音",
     "unavailableSoundsMessage": "这些声音不可用。必须由管理员添加。",
-    "userApiTokenDescription": "此令牌可用于与 SnailyCAD 的 API 进行通信。",
+    "userApiTokenDescription": "此令牌可用于与 KCDOJRP 的 API 进行通信。",
     "developerMode": "开发者模式",
     "statusViewDescription": "在活跃单位列表中显示状态代码（10-code）的颜色方式。"
   },

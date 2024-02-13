@@ -74,11 +74,11 @@ if (process.env.NODE_ENV === "development") {
       specVersion: "3.0.3",
       spec: {
         info: {
-          title: "SnailyCAD API Documentation",
+          title: "KCDOJRP API Documentation",
           version: "0.0.0",
           contact: {
-            name: "SnailyCAD Community Discord",
-            url: "https://discord.gg/eGnrPqEH7U",
+            name: "KCDOJRP Discord",
+            url: "https://discord.gg/ajpxdk2VAT",
           },
         },
       },
@@ -117,7 +117,7 @@ export class Server {
       return res
         .status(200)
         .send(
-          `<html><head><title>SnailyCAD API</title></head><body>200 Success. Current CAD Version: ${versions?.currentVersion} - ${versions?.currentCommitHash}</body></html>`,
+          `<html><head><title>KCDOJRP API</title></head><body>200 Success. Current CAD Version: ${versions?.currentVersion} - ${versions?.currentCommitHash}</body></html>`,
         );
     };
   }
