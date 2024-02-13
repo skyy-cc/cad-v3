@@ -5,12 +5,10 @@ import { getTranslations } from "lib/getTranslation";
 import { requestAll } from "lib/utils";
 import type { GetServerSideProps } from "next";
 import { useTranslations } from "use-intl";
-import { useModal } from "state/modalState";
-import { Alert, Button } from "@snailycad/ui";
-import { ModalIds } from "types/modal-ids";
+import { Alert } from "@snailycad/ui";
 import { useLeoState } from "state/leo-state";
 import { Title } from "components/shared/Title";
-import { usePermission, Permissions } from "hooks/usePermission";
+import { Permissions } from "hooks/usePermission";
 import type { GetActiveOfficerData, GetIncidentsData } from "@snailycad/types/api";
 import { IncidentsTable } from "components/leo/incidents/incidents-table";
 import Link from "next/link";
@@ -22,9 +20,7 @@ interface Props {
 
 export default function LeoIncidents({ activeOfficer, incidents: initialData }: Props) {
   const t = useTranslations("Leo");
-  const modalState = useModal();
   const setActiveOfficer = useLeoState((state) => state.setActiveOfficer);
-  const { hasPermissions } = usePermission();
 
   const isOfficerOnDuty =
     (activeOfficer && activeOfficer.status?.shouldDo !== "SET_OFF_DUTY") ?? false;
@@ -54,16 +50,6 @@ export default function LeoIncidents({ activeOfficer, incidents: initialData }: 
 
       <header className="flex items-center justify-between">
         <Title className="!mb-0">{t("incidents")}</Title>
-
-        {hasPermissions([Permissions.ManageIncidents]) ? (
-          <Button
-            title={!isOfficerOnDuty ? "You must have an active officer." : ""}
-            disabled={!isOfficerOnDuty}
-            onPress={() => modalState.openModal(ModalIds.ManageIncident)}
-          >
-            {t("createIncident")}
-          </Button>
-        ) : null}
       </header>
 
       <IncidentsTable initialData={initialData} isUnitOnDuty={isOfficerOnDuty} type="leo" />

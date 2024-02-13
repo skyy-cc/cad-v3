@@ -117,7 +117,7 @@ export class Server {
       return res
         .status(200)
         .send(
-          `<html><head><title>KCDOJRP API</title></head><body>200 Success. Current CAD Version: ${versions?.currentVersion} - ${versions?.currentCommitHash}</body></html>`,
+          `<html><head><title>KCDOJRP API</title></head><body>Why are you here? Anyway have a cookie 🍪!<br><br>200 Success. Current CAD Version: ${versions?.currentVersion} - ${versions?.currentCommitHash}</body></html>`,
         );
     };
   }
