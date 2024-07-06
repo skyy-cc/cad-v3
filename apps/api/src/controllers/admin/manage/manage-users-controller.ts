@@ -143,6 +143,24 @@ export class ManageUsersController {
     @BodyParams("userIds", String) userIds: string[],
     @BodyParams("days", Number) days = 30,
   ) {
+    await prisma.petMedicalRecord.deleteMany({
+      where: {
+        pet: {
+          citizen: {
+            userId: { in: userIds },
+          },
+        },
+      },
+    });
+
+    await prisma.pet.deleteMany({
+      where: {
+        citizen: {
+          userId: { in: userIds },
+        },
+      },
+    });
+
     const arr = await prisma.$transaction(
       userIds.map((id) =>
         prisma.user.deleteMany({
@@ -176,9 +194,30 @@ export class ManageUsersController {
   async getUserById(
     @PathParams("id") id: string,
     @QueryParams("select-citizens") selectCitizens: boolean,
-  ): Promise<APITypes.GetManageUserByIdData> {
+    @QueryParams("steamId", String) steamId?: string,
+    @QueryParams("discordId", String) discordId?: string,
+  ): Promise<APITypes.GetManageUserByIdData | APITypes.GetManageUserByIdData[]> {
+    if (steamId || discordId) {
+      const users = await prisma.user.findMany({
+        where: { OR: [{ discordId }, { steamId }] },
+        select: manageUsersSelect(selectCitizens),
+      });
+
+      if (users.length <= 0) {
+        throw new NotFound("userNotFound");
+      }
+
+      return users.map((user) => {
+        const { User2FA, ...rest } = user;
+        return {
+          twoFactorEnabled: User2FA.length >= 1,
+          ...rest,
+        };
+      });
+    }
+
     const user = await prisma.user.findFirst({
-      where: { OR: [{ id }, { discordId: id }, { steamId: id }] },
+      where: { OR: [{ id }, { discordId }, { steamId }] },
       select: manageUsersSelect(selectCitizens),
     });
 
@@ -471,6 +510,24 @@ export class ManageUsersController {
     if (!user) {
       throw new NotFound("notFound");
     }
+
+    await prisma.petMedicalRecord.deleteMany({
+      where: {
+        pet: {
+          citizen: {
+            userId: user.id,
+          },
+        },
+      },
+    });
+
+    await prisma.pet.deleteMany({
+      where: {
+        citizen: {
+          userId: user.id,
+        },
+      },
+    });
 
     await prisma.user.delete({
       where: {
